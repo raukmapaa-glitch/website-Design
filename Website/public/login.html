@@ -1,0 +1,392 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Create a DoBu Martial Arts member account or sign in.">
+  <meta name="theme-color" content="#0b1c1c">
+  <title>Sign in or register | DoBu Martial Arts</title>
+  <link rel="icon" href="/assets/logo.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/css/styles.css?v=1.2.1">
+  <script src="/js/app.js?v=1.2.1" defer></script>
+</head>
+<body data-page="login">
+<a class="skip-link" href="#main">Skip to main content</a>
+<header class="site-header"><div class="container header-inner">
+  <a class="brand" href="/index.html" aria-label="DoBu Martial Arts home"><img src="/assets/logo.svg" alt="" width="40" height="40"><span>DO<span>BU</span> <small class="brand-subtitle">MARTIAL ARTS</small></span></a>
+  <button class="menu-toggle" id="menu-toggle" type="button" aria-expanded="false" aria-controls="main-nav">Menu ☰</button>
+  <nav class="main-nav" id="main-nav" aria-label="Primary navigation"><a href="/index.html">Home</a>
+<a href="/about.html">About</a>
+<a href="/classes.html">Classes</a>
+<a href="/timetable.html">Timetable</a>
+<a href="/pricing.html">Pricing</a>
+<a href="/trainers.html">Trainers</a>
+<a href="/membership.html">Membership</a>
+<a href="/community.html">Community</a>
+<a href="/contact.html">Contact</a><a href="/login.html" class="nav-action" data-account-link>Join now</a></nav>
+</div></header>
+<main id="main">
+<!-- =====================================
+         HERO SECTION
+    ====================================== -->
+
+    <section class="page-hero">
+
+      <div class="container">
+
+        <span class="eyebrow light">
+          Member access
+        </span>
+
+        <h1>
+          Your next chapter starts here.
+        </h1>
+
+        <p>
+          Sign in or create an account to save a plan
+          preference and join the community.
+        </p>
+
+      </div>
+
+    </section>
+
+
+    <!-- =====================================
+         LOGIN / REGISTER SECTION
+    ====================================== -->
+
+    <section class="section">
+
+      <div class="container auth-shell">
+
+
+        <!-- =====================================
+             MEMBER BENEFITS
+        ====================================== -->
+
+        <div class="auth-side">
+
+          <span class="eyebrow light">
+            Member benefits
+          </span>
+
+          <h2>
+            More than a login.
+          </h2>
+
+          <ul class="checks">
+
+            <li>
+              Save a membership preference
+            </li>
+
+            <li>
+              Change or clear your choice at any time
+            </li>
+
+            <li>
+              Join the member discussion
+            </li>
+
+          </ul>
+
+          <p>
+            Account creation is for this assignment
+            demonstration. No payments are collected.
+          </p>
+
+        </div>
+
+
+        <!-- =====================================
+             FORM CARD
+        ====================================== -->
+
+        <div class="form-card">
+
+
+          <!-- =====================================
+               TABS
+          ====================================== -->
+
+          <div
+            class="tabs"
+            role="tablist"
+            aria-label="Member access"
+          >
+
+            <button
+              type="button"
+              id="login-tab"
+              data-tab="login"
+              role="tab"
+              aria-selected="true"
+              aria-controls="login-form"
+            >
+              Sign in
+            </button>
+
+
+            <button
+              type="button"
+              id="register-tab"
+              data-tab="register"
+              role="tab"
+              aria-selected="false"
+              aria-controls="register-form"
+            >
+              Create account
+            </button>
+
+          </div>
+
+
+          <!-- =====================================
+               LOGIN FORM
+          ====================================== -->
+
+          <form
+            id="login-form"
+            role="tabpanel"
+            aria-labelledby="login-tab"
+            novalidate
+          >
+
+            <h2>
+              Welcome back.
+            </h2>
+
+
+            <!-- Login Email -->
+
+            <div class="field">
+
+              <label for="login-email">
+                Email
+              </label>
+
+              <input
+                id="login-email"
+                name="email"
+                type="email"
+                autocomplete="email"
+                maxlength="120"
+                aria-describedby="login-email-error"
+                required
+              >
+
+              <small
+                class="field-error"
+                id="login-email-error"
+                aria-live="polite"
+              ></small>
+
+            </div>
+
+
+            <!-- Login Password -->
+
+            <div class="field">
+
+              <label for="login-password">
+                Password
+              </label>
+
+              <input
+                id="login-password"
+                name="password"
+                type="password"
+                autocomplete="current-password"
+                maxlength="128"
+                aria-describedby="login-password-error"
+                required
+              >
+
+              <small
+                class="field-error"
+                id="login-password-error"
+                aria-live="polite"
+              ></small>
+
+            </div>
+
+
+            <button
+              class="button dark"
+              type="submit"
+            >
+              Sign in
+            </button>
+
+
+            <p
+              class="form-message"
+              id="login-message"
+              role="status"
+              aria-live="polite"
+            ></p>
+
+          </form>
+
+
+          <!-- =====================================
+               REGISTER FORM
+          ====================================== -->
+
+          <form
+            id="register-form"
+            role="tabpanel"
+            aria-labelledby="register-tab"
+            novalidate
+            hidden
+          >
+
+            <h2>
+              Join DoBu.
+            </h2>
+
+
+            <!-- Name -->
+
+            <div class="field">
+
+              <label for="register-name">
+                Name
+              </label>
+
+              <input
+                id="register-name"
+                name="name"
+                type="text"
+                autocomplete="name"
+                minlength="2"
+                maxlength="60"
+                aria-describedby="register-name-error"
+                required
+              >
+
+              <small
+                class="field-error"
+                id="register-name-error"
+                aria-live="polite"
+              ></small>
+
+            </div>
+
+
+            <!-- Email -->
+
+            <div class="field">
+
+              <label for="register-email">
+                Email
+              </label>
+
+              <input
+                id="register-email"
+                name="email"
+                type="email"
+                autocomplete="email"
+                maxlength="120"
+                aria-describedby="register-email-error"
+                required
+              >
+
+              <small
+                class="field-error"
+                id="register-email-error"
+                aria-live="polite"
+              ></small>
+
+            </div>
+
+
+            <!-- Password -->
+
+            <div class="field">
+
+              <label for="register-password">
+                Password
+              </label>
+
+              <input
+                id="register-password"
+                name="password"
+                type="password"
+                autocomplete="new-password"
+                minlength="10"
+                maxlength="128"
+                aria-describedby="password-help register-password-error"
+                required
+              >
+
+              <small id="password-help">
+                Use at least 10 characters.
+              </small>
+
+              <small
+                class="field-error"
+                id="register-password-error"
+                aria-live="polite"
+              ></small>
+
+            </div>
+
+
+            <!-- Confirm Password -->
+
+            <div class="field">
+
+              <label for="register-confirm">
+                Confirm password
+              </label>
+
+              <input
+                id="register-confirm"
+                name="confirm"
+                type="password"
+                autocomplete="new-password"
+                minlength="10"
+                maxlength="128"
+                aria-describedby="register-confirm-error"
+                required
+              >
+
+              <small
+                class="field-error"
+                id="register-confirm-error"
+                aria-live="polite"
+              ></small>
+
+            </div>
+
+
+            <button
+              class="button dark"
+              type="submit"
+            >
+              Create account
+            </button>
+
+
+            <p
+              class="form-message"
+              id="register-message"
+              role="status"
+              aria-live="polite"
+            ></p>
+
+          </form>
+
+        </div>
+
+      </div>
+
+    </section>
+</main>
+<footer class="footer"><div class="container"><div class="footer-grid">
+  <div><a class="brand" href="/index.html"><img src="/assets/logo.svg" alt="" width="40" height="40"><span>DO<span>BU</span> MARTIAL ARTS</span></a><p>Martial arts, fitness and a welcoming place to grow. Built as a website development assignment demonstration.</p></div>
+  <div><h3>Explore</h3><a href="/classes.html">Classes</a><a href="/timetable.html">Timetable</a><a href="/pricing.html">Memberships &amp; pricing</a><a href="/trainers.html">Our coaches</a></div>
+  <div><h3>Connect</h3><a href="/about.html">About us</a><a href="/community.html">Community</a><a href="/contact.html">Contact</a><a href="/membership.html">Member area</a></div>
+</div><div class="footer-bottom"><span>© DoBu Martial Arts • Assignment demonstration</span><span>Train with purpose. Grow together.</span></div></div></footer>
+</body></html>

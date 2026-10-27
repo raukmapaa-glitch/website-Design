@@ -1,0 +1,46 @@
+Executed on 27 October 2026 with Node.js 24.22.1. Release 1.2.1.
+Scope: HTTP/API and simulated DOM; no real browser or Lighthouse run.
+
+
+> dobu-martial-arts-website@1.2.1 test
+> node --test tests/server.test.js tests/frontend.test.cjs
+
+PASS: all five pricing choices survive guest sign-in/registration links and auth redirects
+PASS: account check displays loading instead of briefly showing a signed-out page
+PASS: authenticated plan handoff, successful save, query cleanup and refreshed display
+PASS: No plan selected sends null and clears the displayed preference
+PASS: connection failure is visible and Try again recovers the correct account
+PASS: non-JSON static-server responses and incorrect API responses show an error
+PASS: expired-session save returns to sign-in with a visible explanation
+PASS: pending save blocks duplicate updates and re-enables controls afterwards
+PASS: failed save keeps the saved value and preserves the unsaved choice for retry
+PASS: a stalled account request times out and offers retry
+PASS: a stalled save times out without locking the form or showing false success
+PASS: registration mismatch is rejected before a request and valid registration preserves the chosen plan
+PASS: invalid login displays feedback and keyboard arrows switch the account tabs
+PASS: Community loading failure can be retried and becomes a useful empty state
+PASS: Community publish prevents duplicate submissions while a request is pending
+PASS: Contact saves one request and displays the stored enquiry acknowledgement
+PASS: Live Server preview provides a link to the Node page and retains the plan query
+
+17 frontend regression groups passed.
+✔ tests/frontend.test.cjs (163.492647ms)
+✔ all ten pages and all 100 primary navigation targets load (220.778515ms)
+✔ release identity, local assets and API cache handling (8.506041ms)
+✔ anonymous writes and invalid registration are rejected (7.288345ms)
+✔ registration creates one hashed account and rejects duplicates and bad credentials (377.731523ms)
+✔ five plans can be saved and changed while invalid plans preserve the previous choice (15.849159ms)
+✔ sign out, sign in and server restart retain the saved preference (282.661419ms)
+✔ contact validation rejects invalid input and stores one valid enquiry (10.29968ms)
+✔ community loads its empty state data and retains an authenticated post (5.261932ms)
+✔ missing resources, malformed input and foreign origins are rejected (8.556934ms)
+✔ existing demo accounts can sign in and their legacy password hash is upgraded (336.527944ms)
+✔ an older database without posts is upgraded while accounts, sessions and enquiries are preserved (104.74088ms)
+ℹ tests 12
+ℹ suites 0
+ℹ pass 12
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 1539.297971

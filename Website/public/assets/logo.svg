@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80 80" role="img" aria-label="DoBu mark">
+  <rect width="80" height="80" rx="19" fill="#d8e786"/>
+  <path d="M17 19h19c19 0 28 9 28 21s-9 21-28 21H17V19zm16 12v18h5c8 0 12-3 12-9s-4-9-12-9h-5z" fill="#102d2a"/>
+  <path d="M16 68h48" stroke="#102d2a" stroke-width="3"/>
+</svg>

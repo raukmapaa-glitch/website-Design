@@ -1,0 +1,18 @@
+DoBu Martial Arts 1.2.1
+
+Website ဖွင့်ရန်
+1. ZIP ကို Extract လုပ်ပါ။
+2. START_WEBSITE.bat ကို double-click နှိပ်ပါ။ public folder ထဲက ဖိုင်ကိုလည်း သုံးနိုင်ပါတယ်။
+3. Browser ပွင့်လာလျှင် http://localhost:3000 ကို အသုံးပြုပါ။
+4. Server window ကို website သုံးနေစဉ် ဖွင့်ထားပါ။
+
+Node.js LTS ကို စက်မှာ install လုပ်ထားရန် လိုအပ်ပါတယ်။
+VS Code Go Live 5500 က static preview ဖြစ်ပါတယ်။ Account, Membership, Community ကို 3000 မှာသုံးပါ။
+
+Terminal နဲ့ဖွင့်ရန်
+server.js နဲ့ package.json ရှိတဲ့ folder မှာ node server.js ကို run ပါ။
+No npm install is required.
+
+Accounts and saved data are created in data/db.json after the first server start.
+No real accounts, passwords, enquiries or posts are included in this ZIP.
+Membership saves a preference only. The contact form stores an enquiry and does not send email.

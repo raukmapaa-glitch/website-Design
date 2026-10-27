@@ -1,0 +1,91 @@
+{
+  "checked_on": "27 October 2026",
+  "results": [
+    {
+      "route": "/about.html",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "route": "/classes.html",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "route": "/contact.html",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "route": "/index.html",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "route": "/login.html",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "route": "/membership.html",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "route": "/pricing.html",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "route": "/timetable.html",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "route": "/trainers.html",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "route": "/community.html",
+      "method": "GET",
+      "status": 404,
+      "error": "Page not found."
+    },
+    {
+      "route": "/api/posts",
+      "method": "GET",
+      "status": 404,
+      "error": "Not found."
+    },
+    {
+      "route": "/api/register",
+      "method": "POST",
+      "status": 201,
+      "plan": null
+    },
+    {
+      "route": "/api/membership",
+      "method": "PUT",
+      "status": 200,
+      "plan": "basic"
+    },
+    {
+      "route": "/api/me",
+      "method": "GET",
+      "status": 200,
+      "plan": "basic"
+    },
+    {
+      "route": "/api/logout",
+      "method": "POST",
+      "status": 200
+    },
+    {
+      "route": "/api/login",
+      "method": "POST",
+      "status": 401,
+      "error": "Incorrect email or password."
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "name": "dobu-martial-arts-website",
+  "version": "1.2.1",
+  "private": true,
+  "description": "Multipage DoBu Martial Arts assignment website",
+  "scripts": {
+    "start": "node server.js",
+    "test": "node --test tests/server.test.js tests/frontend.test.cjs"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
